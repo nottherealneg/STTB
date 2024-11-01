@@ -51,8 +51,6 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-
-
         .logo {
             display: flex;
             flex-direction: column;
@@ -220,163 +218,29 @@
         .fade-in {
             animation: fadeIn 1s ease-in;
         }
-/* Media Queries */
-/* Large tablets and smaller */
-         @media (max-width: 1024px) {
-    .container {
-        padding: 15px;
-    }
 
-    .company-title {
-        font-size: 2rem;
-    }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .two-column-container {
+                flex-direction: column;
+            }
+            
+            .error-types {
+                flex-direction: column;
+            }
 
-    .expandable-header h1 {
-        font-size: 1.6rem;
-    }
+            .logo img {
+                max-width: 100px;
+            }
+            
+            .company-title {
+                font-size: 1.8rem;
+            }
 
-    .interactive-image {
-        max-width: 40%;
-    }
-}
-
-/* Tablets and large phones */
-         @media (max-width: 768px) {
-    .heading-box {
-        height: 30vh;
-        border-radius: 15px;
-    }
-
-    .company-title {
-        font-size: 1.8rem;
-    }
-
-    .logo img {
-        max-width: 120px;
-    }
-
-    .expandable-header h1 {
-        font-size: 1.4rem;
-    }
-
-    .two-column-container {
-        flex-direction: column;
-    }
-
-    .error-types {
-        flex-direction: column;
-    }
-
-    .interactive-image {
-        max-width: 50%;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .objectives-container {
-        flex-direction: column;
-    }
-}
-
-/* Medium phones */
-         @media (max-width: 480px) {
-    .heading-box {
-        height: 25vh;
-    }
-
-    .company-title {
-        font-size: 1.5rem;
-        padding: 6px 0;
-    }
-
-    .logo img {
-        max-width: 100px;
-    }
-
-    .expandable-header h1 {
-        font-size: 1.2rem;
-    }
-
-    .container {
-        padding: 10px;
-        border-radius: 10px;
-    }
-
-    .interactive-image {
-        max-width: 80%;
-    }
-
-    .objectives-section {
-        padding: 20px;
-    }
-}
-
-/* Small phones */
-         @media (max-width: 320px) {
-    .heading-box {
-        height: 20vh;
-    }
-
-    .company-title {
-        font-size: 1.2rem;
-        padding: 4px 0;
-    }
-
-    .expandable-header h1 {
-        font-size: 1.1rem;
-    }
-
-    .interactive-image {
-        max-width: 100%;
-    }
-
-    .objectives-section {
-        padding: 15px;
-    }
-}
-
-/* Contact Section Responsiveness */
-         @media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .contact-methods {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .contact-card {
-        padding: 1rem;
-    }
-}
-
-/* Animation Adjustments for Mobile */
-         @media (max-width: 768px) {
-    .animate-list li {
-        animation-duration: 0.3s;
-    }
-}
-
-/* Modal Adjustments for Mobile */
-       @media (max-width: 768px) {
-    .modal-content {
-        max-width: 95%;
-        margin: 10px auto;
-    }
-
-    .modal-close {
-        top: 10px;
-        right: 10px;
-    }
-}
-
-
-
- 
-
-
+            .modal-content {
+                max-width: 95%;
+            }
+        }
         .objectives-section {
         padding: 30px;
         background: linear-gradient(to bottom right, #ffffff, #f8f9fa);
