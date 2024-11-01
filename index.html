@@ -257,10 +257,39 @@
             }
             
         }
-        @media  {
-            .expandable-header{font-size:  1.2rem;}
-            
-          }
+
+
+            /* Large tablets and smaller */
+         @media (max-width: 1024px) {
+    .expandable-header h1 {
+        font-size: 1.6rem;
+    }
+    .expandable-header {
+        padding: 12px;
+    }
+}
+
+/* Tablets and large phones */
+    @media (max-width: 768px) {
+    .expandable-header h1 {
+        font-size: 1.4rem;
+    }
+    .expandable-header {
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
+
+/* Medium phones */
+     @media (max-width: 480px) {
+    .expandable-header h1 {
+        font-size: 1.2rem;
+    }
+    .expandable-header {
+        padding: 8px;
+        border-radius: 6px;
+    }
+}  
 
 
         .objectives-section {
